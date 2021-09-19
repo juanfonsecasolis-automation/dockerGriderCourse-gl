@@ -1,25 +1,31 @@
 # dockerGriderCourse-gl
 Notes of the course https://gorillalogic.udemy.com/course/docker-and-kubernetes-the-complete-guide
 
+# Motivation
+Docker makes it easy to install and run software without worrying about setup or dependencies.
+
 ## Instalation 
 See https://docs.docker.com/install/linux/docker-ce/ubuntu/
 
 ## Docker ecosystem
-* Docker client: interfaces for the docker server, executes commands.
-* Docker server: software that creates images and containers (docker daemon).
-* Docker Hub: website were you can get docker images.
-* Docker Compose (as in the course of Kidman with selenium that uses a docker-compose.yaml)
-* Docker images
-* Docker machine
+* **Docker client:** interfaces for the docker server, executes CLI commands.
+* **Docker server:** software that creates images and containers (docker daemon).
+* **Docker Hub:** website were you can get docker images.
+* **Docker Compose** (as in the course of Kidman with selenium that uses a docker-compose.yaml)
+* **Docker images**
+* **Docker machine**
 
 ## Terminology
-* Image: single file with all the configurations needed to run a program. In other words, a File System snapshot with a start-up command.
-* Container: instance of an image, or a space with isolated resources (e.g. memory).
-* Image cache: a service that is called before downloading an image from the docker hub
+* **Image:** single file with all the configurations needed to run a program. In other words, a File System snapshot with a start-up command.
+* **Container:** instance of an image, or a space with isolated resources (e.g. memory).
+* **Image cache:** a service that is called before downloading an image from the docker hub
 
 # Docker client commands
 * `docker --version`
-* `docker run hello-world`
+* `docker run hello-world` (`docker build` and `docker start` on the same line)
+* `docker ps --all`: list all running containers
+* `docker system prune`: To delete all stoped containers (you'll have to download the containers again)
+* 
 
 # Operative system architecture
 * Programs consume resources (CPU, memory, harddisk) through the Kernel via system call.
