@@ -17,7 +17,6 @@ TBD...
 * `docker system prune`: To delete all stoped containers (you'll have to download the containers again) 
 
 ## 4 Theory
-TBD...
 
 ### 4.1 Motivation
 Docker makes it easy to install and run software without worrying about setup or dependencies.
